@@ -1,0 +1,38 @@
+                          
+
+
+{title: 'Roche on How to Take Full Advantage of SAP with a SOAP',
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-roche-logo.svg', link: ""}
+
+{title: 'Achmea: Modern Workload Automation Platform Powers the Move to a Hybrid IT, 'Environment
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-achmea-logo-sm.svg', link: ""}
+
+{title: 'Colgate on Their Cloud-First SaaS Approach to Orchestration',
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-colgate-logo.svg', link: ""}
+
+{title: 'Expedia Group: Using Automation to Drive Digital Business                     ',     
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-expedia-group-logo.svg', link: ""}
+
+{title: 'ING Group Empowers End-Users with Self-Service Automation           ',               
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-ing-logo.svg', link: ""}
+
+{title: 'BP's Cloud-First Approach with SaaS-Based Workload Automation      ',                    
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-bp-logo.svg', link: ""}
+
+{title: 'Roche on How to Take Full Advantage of SAP with a SOAP                ',          
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-roche-logo.svg', link: ""}
+
+{title: 'Achmea: Modern Workload Automation Platform Powers the Move to a Hybrid IT, 'Environment                          
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-achmea-logo-sm.svg', link: ""}
+
+{title: 'Colgate on Their Cloud-First SaaS Approach to Orchestration             ',             
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-colgate-logo.svg', link: ""}
+
+{title: 'Expedia Group: Using Automation to Drive Digital Business                     ',     
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-expedia-group-logo.svg', link: ""}
+
+{title: 'ING Group Empowers End-Users with Self-Service Automation           ',             
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-ing-logo.svg', link: ""}
+
+{title: 'BP's Cloud-First Approach with SaaS-Based Workload Automation',
+imgSrc: '/fileadmin/logos/success_stories/stonebranch-bp-logo.svg', link: ""}

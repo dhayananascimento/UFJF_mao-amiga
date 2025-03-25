@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="182px" height="206px" viewBox="0 0 182 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 15 Copy 6</title>
+    <defs>
+        <linearGradient x1="7.5440155e-13%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#186CDA" offset="0%"></stop>
+            <stop stop-color="#0B3876" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.8973878%" y1="0%" x2="89.1026122%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#186CDA" offset="0%"></stop>
+            <stop stop-color="#4287E1" offset="62.3033217%"></stop>
+            <stop stop-color="#6BA1E7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="stonebranch-homepage-update" transform="translate(-762, -3853)" fill-rule="nonzero">
+            <g id="Group-26" transform="translate(0, 3484)">
+                <g id="Group-27" transform="translate(174, 138)">
+                    <g id="Group-14" transform="translate(44.0672, 26.7665)">
+                        <g id="Group-15-Copy-6" transform="translate(544, 205)">
+                            <path d="M98.454401,2.14150713 L172.951952,45.2784939 C177.919745,48.1550402 180.983098,53.4916541 180.983098,59.2694174 L180.983098,145.384534 C180.983098,151.162297 177.919745,156.498911 172.951952,159.375458 L98.454401,202.512444 C93.5232257,205.367788 87.4598718,205.367788 82.5286965,202.512444 L8.03114589,159.375458 C3.06335213,156.498911 0,151.162297 0,145.384534 L0,59.2694174 C0,53.4916541 3.06335213,48.1550402 8.03114589,45.2784939 L82.5286965,2.14150713 C87.4598718,-0.71383571 93.5232257,-0.71383571 98.454401,2.14150713 Z" id="Path-Copy-4" fill="url(#linearGradient-1)" opacity="0.281017485" transform="translate(90.4915, 102.327) rotate(-360) translate(-90.4915, -102.327)"></path>
+                            <path d="M98.0587907,7.51955972 L168.314104,48.2001251 C172.999007,50.9128674 175.887918,55.9455896 175.887918,61.3943401 L175.887918,142.60566 C175.887918,148.05441 172.999007,153.087133 168.314104,155.799875 L98.0587907,196.48044 C93.4084195,199.173187 87.6903413,199.173187 83.0399701,196.48044 L12.7846579,155.799875 C8.09975351,153.087133 5.21084295,148.05441 5.21084295,142.60566 L5.21084295,61.3943401 C5.21084295,55.9455896 8.09975351,50.9128674 12.7846579,48.2001251 L83.0399701,7.51955972 C87.6903413,4.82681343 93.4084195,4.82681343 98.0587907,7.51955972 Z" id="Path-Copy-4" fill="url(#linearGradient-2)" transform="translate(90.5494, 102) rotate(-360) translate(-90.5494, -102)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
