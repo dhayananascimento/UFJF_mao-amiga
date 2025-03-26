@@ -18,7 +18,7 @@ export const leadershipTeamData: CardData[] = [
   {
     title: 'Marcella Alhadas',
     subtitle: 'Engenheira de Automação',
-    content: "As the Chief Sales Officer, Mr. Medina is responsible for Stonebranch's strategic sales and partnership initiatives. He leads the global sales team in developing new business opportunities, creating customized solutions for customers, and collaboratively forging a strategic path for the Stonebranch vision. Prior to joining Stonebranch, Mr. Medina spent nearly 15 years working in senior-level roles for organizations including Ericsson and LHS."
+    content: ""
   },
   {
     title: "Pedro ",
@@ -31,8 +31,13 @@ export const leadershipTeamData: CardData[] = [
     content: ""
   },
   {
+    title: "Anna Julia Lucas",
+    subtitle: "Análista de Sistemas",
+    content: ""
+  },
+  {
     title: "Julia",
-    subtitle: "",
+    subtitle: "Estagiária de TI",
     content: ""
   },
 ]

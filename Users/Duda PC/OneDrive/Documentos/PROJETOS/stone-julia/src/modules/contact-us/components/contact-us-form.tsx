@@ -3,7 +3,7 @@ import {
   Typography,
   TextField,
   Stack,
-  Checkbox,
+  //Checkbox,
   Button,
 } from '@mui/material';
 import StyledInput from './input';
@@ -32,25 +32,25 @@ const StyledTypography = ({
 export const ContactUsForm = () => {
   return (
     <Box display="flex" flexDirection="column" width="100%" gap={2}>
-      <StyledInput value="" onChange={() => {}} placeholder="First Name" />
-      <StyledInput value="" onChange={() => {}} placeholder="Last Name" />
-      <StyledInput value="" onChange={() => {}} placeholder="Work Email" />
-      <StyledInput value="" onChange={() => {}} placeholder="Phone Number" />
-      <StyledInput value="" onChange={() => {}} placeholder="Company" />
-      <StyledInput value="" onChange={() => {}} placeholder="Country" />
+      <StyledInput value="" onChange={() => {}} placeholder="Primeiro Nome" />
+      <StyledInput value="" onChange={() => {}} placeholder="Último Nome" />
+      <StyledInput value="" onChange={() => {}} placeholder="E-mail de trabalho" />
+      <StyledInput value="" onChange={() => {}} placeholder="Número de telefone" />
+      <StyledInput value="" onChange={() => {}} placeholder="Empresa" />
+      <StyledInput value="" onChange={() => {}} placeholder="País" />
       <StyledInput
         value=""
         onChange={() => {}}
-        placeholder="Reason for Inquiry"
+        placeholder="Motivo da consulta"
       />
       <Stack>
-        <StyledTypography label="Message" notRequired />
+        <StyledTypography label="Mensagem" notRequired />
         <TextField
           variant="outlined"
           multiline
           rows={4}
           fullWidth
-          placeholder="Your message here..."
+          placeholder="Sua mensagem aqui.."
         />
       </Stack>
 
@@ -60,59 +60,13 @@ export const ContactUsForm = () => {
         variant="body2"
         fontWeight={400}
       >
-        Stonebranch is committed to protecting and respecting your privacy, and
-        we&apos;ll only use your personal information to administer your account
-        and to provide the products and services you requested from us. From
-        time to time, we would like to contact you about our products and
-        services, as well as other content that may be of interest to you. If
-        you consent to us contacting you for this purpose, please tick below to
-        say how you would like us to contact you:
-      </Typography>
-      <Stack direction={'row'} gap={1} alignItems={'center'}>
-        <Checkbox />
-        <Typography
-          color="gray"
-          fontFamily={'sans-serif'}
-          variant="body2"
-          fontWeight={400}
-        >
-          I agree to receive other communications from Stonebranch.
-        </Typography>
-      </Stack>
+        A Automateasy está comprometida em proteger sua privacidade e garantir a segurança de
+        seus dados. Suas informações pessoais serão utilizadas exclusivamente para gerenciar
+        nossa comunicação e fornecer os produtos e serviços solicitados. Respeitamos sua 
+        escolha e garantimos que seus dados não serão utilizados para envios não autorizados.
+        Caso queira definir suas preferências de contato, selecione abaixo como deseja se 
+        comunicar conosco.
 
-      <Typography
-        color="gray"
-        fontFamily={'sans-serif'}
-        variant="body2"
-        fontWeight={400}
-      >
-        In order to provide you the content requested, we need to store and
-        process your personal data. If you consent to us storing your personal
-        data for this purpose, please tick the checkbox below.
-      </Typography>
-
-      <Stack direction={'row'} gap={1} alignItems={'center'}>
-        <Checkbox />
-        <Typography
-          color="gray"
-          fontFamily={'sans-serif'}
-          variant="body2"
-          fontWeight={400}
-        >
-          I agree to allow Stonebranch to store and process my personal data.
-          <span style={{ color: 'red' }}>*</span>
-        </Typography>
-      </Stack>
-      <Typography
-        color="gray"
-        fontFamily={'sans-serif'}
-        variant="body2"
-        fontWeight={400}
-      >
-        You may unsubscribe from these communications at any time. For more
-        information on how to unsubscribe, our privacy practices, and how we are
-        committed to protecting and respecting your privacy, please review our
-        Privacy Policy.
       </Typography>
       <Button
         variant="contained"
@@ -130,7 +84,7 @@ export const ContactUsForm = () => {
           textTransform: 'none',
         }}
       >
-        Submit
+        Enviar
       </Button>
     </Box>
   );
