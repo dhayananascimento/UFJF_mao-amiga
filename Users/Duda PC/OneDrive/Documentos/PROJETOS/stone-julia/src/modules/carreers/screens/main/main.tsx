@@ -18,7 +18,7 @@ export function Carreers() {
   const isBiggerThanLarge = useMediaQuery(theme.breakpoints.up('xl'));
   return (
     <Box>
-      <Container maxWidth={isBiggerThanLarge ? 'lg' : 'md'}>
+      <Container maxWidth={isBiggerThanLarge ? 'xl' : 'lg'}>
         <Box
           position="absolute"
           width={!isBiggerThanLarge ? 450 : 750}

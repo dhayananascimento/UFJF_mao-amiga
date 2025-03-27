@@ -17,7 +17,7 @@ export const CardsGrid = ({
   props?: GridBaseProps;
 }) => {
   return (
-    <Container maxWidth={isBiggerThanLarge ? 'lg' : 'md'}>
+    <Container maxWidth={isBiggerThanLarge ? 'xl' : 'lg'}>
       <Grid2 container mt={4} spacing={8}>
         {data.map((item) => (
           <Grid2

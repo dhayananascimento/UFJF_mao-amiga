@@ -18,7 +18,7 @@ export function ContactUs() {
   const isBiggerThanLarge = useMediaQuery(theme.breakpoints.up('xl'));
   return (
     <Box>
-      <Container maxWidth={isBiggerThanLarge ? 'lg' : 'md'}>
+      <Container maxWidth={isBiggerThanLarge ? 'xl' : 'lg'}>
         <Grid2 container mt={8} spacing={8} mb={8}>
           <Grid2
             size={{

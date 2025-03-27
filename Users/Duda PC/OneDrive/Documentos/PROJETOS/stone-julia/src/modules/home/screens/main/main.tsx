@@ -20,7 +20,6 @@ import { useState } from 'react';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
 import InfiniteCarousel from './components/card-velocity/card-velocity';
 import Footer from '@/components/footes/footer';
-import { SuccesStoriesCarousel } from './components/succes-stories-carousel/succes-stories-carousel';
 
 const fontFamilyBoldVar = 'var(--font-ample-soft-bold)';
 
@@ -45,7 +44,7 @@ export function Home() {
   // }, []);
   return (
     <Box>
-      <Container maxWidth={isBiggerThanXLarge ? 'lg' : 'md'}>
+      <Container maxWidth={isBiggerThanXLarge ? 'xl' : 'lg'}>
         <Box
           position="absolute"
           width={!isBiggerThanXLarge ? 450 : 750}
@@ -56,36 +55,62 @@ export function Home() {
         >
           <Image src="/assets/inicio-lateral.svg" alt="logo" fill />
         </Box>
-        <Typography
-          variant="h3"
-          fontWeight={700}
-          fontSize={46}
-          mt={6}
-          mb={3}
-          fontFamily={fontFamilyBoldVar}
+        <Stack
+          direction="row"
+          alignItems="center"
+          sx={{
+            flexDirection: { xs: 'column', lg: 'row' },
+          }}
+          justifyContent="space-between"
+          gap={2}
         >
           <Typography
-            component="span"
-            color="secondary.main"
-            fontFamily={fontFamilyBoldVar}
             variant="h3"
+            fontWeight={700}
             fontSize={46}
-            fontWeight={900}
-            mb={20}
+            mb={3}
+            fontFamily={fontFamilyBoldVar}
           >
-           Automação Inteligente em <br /> Tempo Real 
-          </Typography>{' '}
-          - Preparados para o  <br /> que vier a seguir
-        </Typography>
+            <Typography
+              component="span"
+              color="secondary.main"
+              fontFamily={fontFamilyBoldVar}
+              variant="h3"
+              fontSize={46}
+              fontWeight={900}
+              mb={20}
+            >
+              Automação Inteligente em <br /> Tempo Real
+            </Typography>{' '}
+            - Preparados para o <br /> que vier a seguir
+          </Typography>
+          <Box
+            sx={{
+              position: 'relative',
+              width: isBiggerThanXLarge ? 650 : 650,
+              height: isBiggerThanXLarge ? 380 : 380,
+            }}
+          >
+            <Image
+              alt="Automateasy"
+              fill
+              style={{
+                objectFit: 'contain',
+              }}
+              src="/assets/home/VIDEO_AUTOMATEASY_03.gif"
+            />
+          </Box>
+        </Stack>
         <Typography
           variant="h6"
           fontWeight={400}
           mb={4}
           fontFamily={'sans-serif'}
         >
-          Centralize o controle e elimine os silos de automação. Transformamos {' '}
-          <br /> o chão de fábrica com IA, supervisórios avançados e integração de sistemas 
-          <br/> para um futuro conectado e eficiente.
+          Centralize o controle e elimine os silos de automação. Transformamos{' '}
+          <br /> o chão de fábrica com IA, supervisórios avançados e integração
+          de sistemas
+          <br /> para um futuro conectado e eficiente.
         </Typography>
         <Button
           variant="contained"
@@ -129,8 +154,10 @@ export function Home() {
           fontFamily={'sans-serif'}
           textAlign={'center'}
         >
-          Soluções complres que integram tecnologia de ponta, otimizam processos e reduzem custos,
-          <br /> atendendo às demandas específicas da sua empresa com qualidade e inovação.
+          Soluções complres que integram tecnologia de ponta, otimizam processos
+          e reduzem custos,
+          <br /> atendendo às demandas específicas da sua empresa com qualidade
+          e inovação.
         </Typography>
         <Grid2 container spacing={3} justifyContent="center" mb={7}>
           {servicesCardData.map((item) => (
@@ -144,8 +171,7 @@ export function Home() {
                 xl: 4,
               }}
             >
-              <ServicesCard {...item} 
-              />
+              <ServicesCard {...item} />
             </Grid2>
           ))}
         </Grid2>
@@ -197,12 +223,14 @@ export function Home() {
                 color="#575757"
                 fontSize={17}
               >
-                Automação avançada, baseada em IA e integração de sistemas, criada para transformar operações industriais hoje e no futuro.
+                Automação avançada, baseada em IA e integração de sistemas,
+                criada para transformar operações industriais hoje e no futuro.
               </Typography>
               <Typography fontFamily={'sans-serif'} color="#575757">
-                Clique nos hexagonos para saber mais sobre os pilares essenciais para automatizar,
-                integrar e otimizar sua operação industrial. Quebre os silos de automação, centralize  
-                o controle e maximize a eficiência em todo o seu ambiente.
+                Clique nos hexagonos para saber mais sobre os pilares essenciais
+                para automatizar, integrar e otimizar sua operação industrial.
+                Quebre os silos de automação, centralize o controle e maximize a
+                eficiência em todo o seu ambiente.
               </Typography>
               <Button
                 variant="contained"
@@ -244,7 +272,7 @@ export function Home() {
               sua imaginação
             </Typography>
             <Typography color="#575757" fontFamily={'sans-serif'}>
-            Integre-se com qualquer plataforma 
+              Integre-se com qualquer plataforma
             </Typography>
             <Button
               sx={{
@@ -262,12 +290,11 @@ export function Home() {
           <InfiniteCarousel />
         </Stack>
       </Container>
-      <Box minHeight={500}>
+      {/* <Box minHeight={500}>
         <Container>
           <SuccesStoriesCarousel />
         </Container>
-
-      </Box>
+      </Box> */}
       <Footer />
     </Box>
   );

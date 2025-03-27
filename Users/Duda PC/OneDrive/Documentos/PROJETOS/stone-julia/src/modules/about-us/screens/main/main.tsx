@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import { directorsData, leadershipTeamData } from '@/utils/about-us/cards-data';
+import { leadershipTeamData } from '@/utils/about-us/cards-data';
 import {
   Box,
   Container,
@@ -20,7 +20,7 @@ export function AboutUs() {
   const isBiggerThanLarge = useMediaQuery(theme.breakpoints.up('xl'));
   return (
     <Box>
-      <Container maxWidth={isBiggerThanLarge ? 'lg' : 'md'}>
+      <Container maxWidth={isBiggerThanLarge ? 'xl' : 'lg'}>
         <Box
           position="absolute"
           width={!isBiggerThanLarge ? 450 : 750}
@@ -57,11 +57,13 @@ export function AboutUs() {
             mb={4}
             fontFamily={'sans-serif'}
           >
-            Com décadas de experiência, a Automateasy transforma o mercado de automação industrial
-            e TI, desenvolvendo soluções inovadoras e acessíveis, sempre priorizando a experiência
-            do usuário. Nossa missão é permitir que empresas automatizem qualquer processo com máxima
-            eficiência e flexibilidade, oferecendo controle centralizado e inteligente para gerenciar
-            e expandir ecossistemas de forma mais segura e ágil.
+            Com décadas de experiência, a Automateasy transforma o mercado de
+            automação industrial e TI, desenvolvendo soluções inovadoras e
+            acessíveis, sempre priorizando a experiência do usuário. Nossa
+            missão é permitir que empresas automatizem qualquer processo com
+            máxima eficiência e flexibilidade, oferecendo controle centralizado
+            e inteligente para gerenciar e expandir ecossistemas de forma mais
+            segura e ágil.
           </Typography>
           <Typography
             variant="h6"
@@ -69,10 +71,11 @@ export function AboutUs() {
             mb={4}
             fontFamily={'sans-serif'}
           >
-          A Automateasy se destaca como uma força no controle de máquinas e processos, engenharia de software
-          e implementação de sistemas de automação. Superamos as expectativas do mercado, desafiando limites e
-          entregando serviços personalizados e tecnologia de ponta que fazem a diferença onde outros provedores 
-          falham.
+            A Automateasy se destaca como uma força no controle de máquinas e
+            processos, engenharia de software e implementação de sistemas de
+            automação. Superamos as expectativas do mercado, desafiando limites
+            e entregando serviços personalizados e tecnologia de ponta que fazem
+            a diferença onde outros provedores falham.
           </Typography>
           <Typography
             variant="h6"
@@ -87,7 +90,7 @@ export function AboutUs() {
             >
               nossa plataforma
             </Link>
-            , conhecer nossos {' '}
+            , conhecer nossos{' '}
             <Link
               href="/customer-successes"
               style={{ color: '#1976d2', textDecoration: 'none' }}
@@ -101,7 +104,7 @@ export function AboutUs() {
             >
               contato conosco
             </Link>{' '}
-            para saber mais. 
+            para saber mais.
           </Typography>
         </Box>
 
@@ -153,8 +156,8 @@ export function AboutUs() {
           color="white"
           fontFamily={fontFamilyBoldVar}
         >
-          Nossos Valores: A Essência do Nosso DNA  <br />
-          e o Compromisso com Nossa Cultura de Trabalho
+          Nossos Valores: A Essência do Nosso DNA <br />e o Compromisso com
+          Nossa Cultura de Trabalho
         </Typography>
         <Typography
           variant="h6"
@@ -165,8 +168,9 @@ export function AboutUs() {
           color="white"
           fontFamily={'sans-serif'}
         >
-          Esses valores são a base que guia nossos serviços e nossas promessas aos clientes,
-          além de moldar a maneira como nos relacionamos uns com os outros, <br />
+          Esses valores são a base que guia nossos serviços e nossas promessas
+          aos clientes, além de moldar a maneira como nos relacionamos uns com
+          os outros, <br />
           criando um ambiente de colaboração e excelência.
         </Typography>
       </Box>
@@ -218,10 +222,12 @@ export function AboutUs() {
           color="white"
           fontFamily={'sans-serif'}
         >
-          A equipe de liderança da Automateasy é formada por empreendedores visionários e especialistas do setor,
-          que trazem anos de experiência e inovação para  <br />  impulsionar o crescimento da empresa. Reconhecida por 
-          sua visão estratégica e liderança de valor, nossa equipe é um pilar essencial para  <br />  o sucesso e a evolução
-          contínua da empresa.
+          A equipe de liderança da Automateasy é formada por empreendedores
+          visionários e especialistas do setor, que trazem anos de experiência e
+          inovação para <br /> impulsionar o crescimento da empresa. Reconhecida
+          por sua visão estratégica e liderança de valor, nossa equipe é um
+          pilar essencial para <br /> o sucesso e a evolução contínua da
+          empresa.
         </Typography>
       </Box>
       <CardsGrid
@@ -246,8 +252,7 @@ export function AboutUs() {
             #05b8d8 100%
           )`,
         }}
-      >
-      </Box>
+      ></Box>
     </Box>
   );
 }
