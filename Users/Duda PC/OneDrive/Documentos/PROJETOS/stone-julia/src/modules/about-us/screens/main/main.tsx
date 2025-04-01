@@ -121,8 +121,8 @@ export function AboutUs() {
           <Image
             src={'/assets/about-us/Global.png'}
             alt="About Us Image"
-            width={1210}
-            height={600} // Altura ajustada
+            width={1250}
+            height={650} // Altura ajustada
             style={{
               objectFit: 'fill', // Garante que a imagem não estoure os limites
             }}

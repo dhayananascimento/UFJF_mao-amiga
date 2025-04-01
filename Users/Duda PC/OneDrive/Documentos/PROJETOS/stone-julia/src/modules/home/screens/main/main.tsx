@@ -20,6 +20,7 @@ import { useState } from 'react';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
 import InfiniteCarousel from './components/card-velocity/card-velocity';
 import Footer from '@/components/footes/footer';
+import { SuccesStoriesCarousel } from './components/succes-stories-carousel/succes-stories-carousel';
 
 const fontFamilyBoldVar = 'var(--font-ample-soft-bold)';
 
@@ -82,7 +83,7 @@ export function Home() {
             >
               Automação Inteligente em <br /> Tempo Real
             </Typography>{' '}
-            - Preparados para o <br /> que vier a seguir
+            - Preparados para o que vier a seguir
           </Typography>
           <Box
             sx={{
@@ -290,11 +291,11 @@ export function Home() {
           <InfiniteCarousel />
         </Stack>
       </Container>
-      {/* <Box minHeight={500}>
+      {<Box minHeight={500}>
         <Container>
           <SuccesStoriesCarousel />
         </Container>
-      </Box> */}
+      </Box>}
       <Footer />
     </Box>
   );
