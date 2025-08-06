@@ -1,6 +1,9 @@
+// src/pages/assistente/AssistenteSocialHome.tsx
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useAuth } from '../../contexts/AuthContext';
+import logo from '@/assets/logo.png';
 import { 
   Home,
   Users,
@@ -12,10 +15,17 @@ import {
   CheckCircle,
   Clock,
   User,
-  Map
+  Map,
+  LogOut
 } from 'lucide-react';
 
 const AssistenteSocialHome = () => {
+  const { logout } = useAuth();
+  
+  const handleLogout = () => {
+    logout();
+  };
+
   const tarefasPendentes = [
     'Revisar cadastro de Maria Silva',
     'Agendar acompanhamento João S.',
@@ -41,19 +51,6 @@ const AssistenteSocialHome = () => {
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
       <div className="w-64 bg-blue-600 text-white flex flex-col">
-        {/* Logo */}
-        <div className="p-6 border-b border-blue-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-blue-600 font-bold text-lg">M</span>
-            </div>
-            <div>
-              <h1 className="font-bold text-lg">Mão Amiga</h1>
-              <p className="text-blue-200 text-sm">Juntos por Quem Precisa</p>
-            </div>
-          </div>
-        </div>
-
         {/* User Info */}
         <div className="p-4 border-b border-blue-500">
           <div className="flex items-center space-x-3">
@@ -108,6 +105,13 @@ const AssistenteSocialHome = () => {
             </li>
           </ul>
         </nav>
+
+        {/* Logo no rodapé */}
+        <div className="p-6 border-t border-blue-500 mt-auto">
+          <div>
+            <img src={logo} alt="Logo Mão Amiga" style={{ width: '200px' }} />
+          </div>
+        </div>
       </div>
 
       {/* Main Content */}
@@ -124,6 +128,14 @@ const AssistenteSocialHome = () => {
             <div className="flex items-center space-x-4">
               <span className="text-gray-700">Olá, Maria!</span>
               <Bell className="w-6 h-6 text-gray-400" />
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleLogout}
+                className="flex items-center space-x-2"
+              >
+                <LogOut className="h-5 w-5" />
+              </Button>
               <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-medium">M</span>
               </div>
@@ -213,13 +225,10 @@ const AssistenteSocialHome = () => {
                   <div className="bg-gradient-to-br from-orange-100 to-yellow-100 rounded-lg h-64 relative overflow-hidden">
                     {/* Simulação de mapa com pontos de calor */}
                     <div className="absolute inset-0">
-                      {/* Pontos de calor simulados */}
                       <div className="absolute top-1/4 left-1/3 w-16 h-16 bg-orange-400 rounded-full opacity-60 blur-sm"></div>
                       <div className="absolute top-1/2 left-1/2 w-20 h-20 bg-orange-500 rounded-full opacity-70 blur-sm"></div>
                       <div className="absolute top-3/4 left-2/3 w-12 h-12 bg-yellow-400 rounded-full opacity-50 blur-sm"></div>
                       <div className="absolute top-1/3 left-2/3 w-14 h-14 bg-orange-300 rounded-full opacity-60 blur-sm"></div>
-                      
-                      {/* Linhas simulando ruas */}
                       <div className="absolute top-1/4 left-0 right-0 h-0.5 bg-gray-300 opacity-30"></div>
                       <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 opacity-30"></div>
                       <div className="absolute top-3/4 left-0 right-0 h-0.5 bg-gray-300 opacity-30"></div>
@@ -227,7 +236,7 @@ const AssistenteSocialHome = () => {
                       <div className="absolute top-0 bottom-0 left-1/2 w-0.5 bg-gray-300 opacity-30"></div>
                       <div className="absolute top-0 bottom-0 left-3/4 w-0.5 bg-gray-300 opacity-30"></div>
                     </div>
-                    
+
                     {/* Botão Ver Mapa Completo */}
                     <div className="absolute bottom-4 right-4">
                       <Button 
@@ -251,4 +260,3 @@ const AssistenteSocialHome = () => {
 };
 
 export default AssistenteSocialHome;
-

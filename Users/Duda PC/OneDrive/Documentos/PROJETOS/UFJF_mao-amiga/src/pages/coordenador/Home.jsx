@@ -1,5 +1,8 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { useAuth } from '../../contexts/AuthContext';
+import logo from '@/assets/logo.png'; // <- Adiciona import da logo
 import { 
   BarChart, 
   Bar, 
@@ -22,10 +25,17 @@ import {
   BarChart3,
   Bell,
   ChevronRight,
-  Map
+  Map, 
+  LogOut
 } from 'lucide-react';
 
 const CoordenadorHome = () => {
+  const { logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+  };
+
   // Dados para o gráfico de atendimentos por mês
   const atendimentosPorMes = [
     { mes: 'Jan', atendimentos: 45 },
@@ -80,19 +90,6 @@ const CoordenadorHome = () => {
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
       <div className="w-64 bg-blue-600 text-white flex flex-col">
-        {/* Logo */}
-        <div className="p-6 border-b border-blue-500">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-blue-600 font-bold text-lg">M</span>
-            </div>
-            <div>
-              <h1 className="font-bold text-lg">Mão Amiga</h1>
-              <p className="text-blue-200 text-sm">Juntos por Quem Precisa</p>
-            </div>
-          </div>
-        </div>
-
         {/* User Info */}
         <div className="p-4 border-b border-blue-500">
           <div className="flex items-center space-x-3">
@@ -141,6 +138,13 @@ const CoordenadorHome = () => {
             </li>
           </ul>
         </nav>
+
+        {/* Logo na parte inferior */}
+        <div className="p-6 border-t border-blue-500 mt-auto">
+          <div>
+            <img src={logo} alt="Logo Mão Amiga" style={{ width: '200px' }} />
+          </div>
+        </div>
       </div>
 
       {/* Main Content */}
@@ -157,6 +161,14 @@ const CoordenadorHome = () => {
             <div className="flex items-center space-x-4">
               <span className="text-gray-700">Olá, Carlos!</span>
               <Bell className="w-6 h-6 text-gray-400" />
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleLogout}
+                className="flex items-center space-x-2"
+              >
+                <LogOut className="h-5 w-5" />
+              </Button>
               <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-medium">C</span>
               </div>

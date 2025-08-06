@@ -1,6 +1,9 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { useAuth } from '../../contexts/AuthContext';
+import logo from '@/assets/logo.png';
 import { 
   Home,
   FileText,
@@ -10,10 +13,17 @@ import {
   MapPin,
   Users,
   Wrench,
-  UserCheck
+  UserCheck,
+  LogOut
 } from 'lucide-react';
 
 const VoluntarioHome = () => {
+  const { logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+  };
+
   const atividadesRecentes = [
     'Participou no Mutirão de Limpeza',
     'Inscreveu-se em aulões de reforço',
@@ -111,15 +121,9 @@ const VoluntarioHome = () => {
 
         {/* Logo */}
         <div className="p-6 border-t border-blue-500 mt-auto">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-blue-600 font-bold text-lg">M</span>
-            </div>
             <div>
-              <h1 className="font-bold text-lg">Mão Amiga</h1>
-              <p className="text-blue-200 text-sm">Juntos por Quem Precisa</p>
+              <img src={logo} alt="Logo Mão Amiga" style={{ width: '200px' }} />
             </div>
-          </div>
         </div>
       </div>
 
@@ -137,6 +141,14 @@ const VoluntarioHome = () => {
             <div className="flex items-center space-x-4">
               <span className="text-gray-700">Olá, Juliana!</span>
               <Bell className="w-6 h-6 text-gray-400" />
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleLogout}
+                className="flex items-center space-x-2"
+              >
+                <LogOut className="h-5 w-5" />
+              </Button>
               <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center">
                 <span className="text-white font-medium">J</span>
               </div>
